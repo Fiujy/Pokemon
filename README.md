@@ -6,6 +6,8 @@ Ce projet est une application Symfony pour gérer les Pokémon.
 
 - Docker
 - Docker Compose
+- PHP 8.3
+- Symfony
 
 ## Installation
 
