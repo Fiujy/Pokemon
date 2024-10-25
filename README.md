@@ -31,30 +31,36 @@ Ce projet est une application Symfony pour gérer les Pokémon.
 4. Installez les dépendances avec Composer :
 
     ```sh
-    docker compose exec php composer install
+    composer install
     ```
 
 5. Générez les migrations de la base de données : 
     ```sh
-    docker compose exec php bin/console make:migration
+    mkdir migrations
+    docker compose exec app php bin/console make:migration
     ```
 
-5. Appliquez les migrations de la base de données :
+6. Appliquez les migrations de la base de données :
 
     ```sh
-    docker compose exec php bin/console doctrine:migrations:migrate
+    docker compose exec app php bin/console doctrine:migrations:migrate
     ```
 
-6. Chargez la base de données à partir de `dump.sql`, avec la configuration de base du projet :
+7. Chargez la base de données à partir de `dump.sql`, avec la configuration de base du projet :
 
     ```sh
     docker exec -i pokemon-db-1 psql -U symfony -d pokemon_db < dump.sql
     ```
 
-7. Sinon :
+8. Sinon :
 
     ```sh
     docker exec -i <nom_du_conteneur_postgres> psql -U <username> -d pokemon_db < dump.sql
+    ```
+
+9. Tester l'application sur l'url : 
+    ```sh
+    http://localhost:8000/
     ```
 
 ## Mise à jour
