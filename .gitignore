@@ -1,0 +1,10 @@
+# Symfony project gitignore 
+/.env
+/vendor
+/migrations
+
+# IDE
+/.idea/
+/*.sublime-project
+/*.sublime-workspace
+/.vscode/

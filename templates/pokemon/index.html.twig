@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste des Pokémons</title>
+</head>
+<body>
+    <h1>Liste des Pokémons</h1>
+    {% for pokemon in pokemons %}
+        <h2>{{ pokemon.name }}</h2>
+        <p>{{ pokemon.type }}</p>
+    {% else %}
+        <p>Aucun Pokémon trouvé.</p>
+    {% endfor %}
+</body>
+</html>
