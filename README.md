@@ -12,8 +12,8 @@ Ce projet est une application Symfony pour gérer les Pokémon.
 1. Clonez le dépôt :
 
     ```sh
-    git clone <URL_DU_DEPOT>
-    cd <NOM_DU_DEPOT>
+    git clone https://github.com/Fiujy/Pokemon.git
+    cd Pokemon
     ```
 
 2. Copiez le fichier `.env.example` et modifiez-le si nécessaire :
