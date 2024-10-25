@@ -2,6 +2,7 @@
 /.env
 /vendor
 /migrations
+/var
 
 # IDE
 /.idea/
